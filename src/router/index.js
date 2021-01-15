@@ -8,9 +8,9 @@ import LayoutAuthentication from '@/layout/LayoutAuthentication'
 
 Vue.use(Router)
 
-// const ifAuthenticated = (to, from, next) => {
-//   console.log('ifAuthenticated')
-// }
+const ifAuthenticated = (to, from, next) => {
+  console.log('ifAuthenticated')
+}
 
 const router = new Router({
   base: '/',
@@ -18,7 +18,7 @@ const router = new Router({
   routes: [{
     path: '/',
     component: LayoutMain,
-    // beforeEnter: ifAuthenticated,
+    beforeEnter: ifAuthenticated,
     children: [{
       path: '',
       component: () => import('@/views/Home')

@@ -1,5 +1,7 @@
 <template>
-  <h2>header auth</h2>
+  <div class="header">
+    header auth
+  </div>
 </template>
 
 <script>
@@ -8,6 +10,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  .header {
+    height: 77px;
+  }
 
 </style>

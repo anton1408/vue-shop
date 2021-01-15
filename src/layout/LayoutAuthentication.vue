@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="layout-wrapper">
     <app-layout-header-auth />
     <router-view />
-    <app-layout-footer />
+    <app-layout-footer class="layout-footer"/>
   </div>
 </template>
 
@@ -19,6 +19,10 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .layout-footer {
+    width: 100%;
+    position: fixed;
+    left: 0; bottom: 0;
+  }
 </style>
