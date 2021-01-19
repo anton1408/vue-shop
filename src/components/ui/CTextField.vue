@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div>
     <label
       v-if="label"
       :for="name"
@@ -86,6 +86,7 @@ export default {
 
 <style lang="scss" scoped>
   .label {
+    display: inline-block;
     margin-bottom: 4px;
     color: #303030;
     font-size: 12px;

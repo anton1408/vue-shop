@@ -98,7 +98,6 @@ export default {
       text-decoration: none;
 
       &:visited {color: #349A89;}
-      &:hover {text-decoration: underline;}
     }
   }
 </style>
