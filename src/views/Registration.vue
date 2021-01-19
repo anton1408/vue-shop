@@ -1,7 +1,8 @@
 <template>
   <div class="registration-wrapper">
     <c-card class="registration">
-      <p class="registration__title">Register</p>
+      <h1 class="visually-hidden">Registration page</h1>
+      <h3 class="registration__title">Register</h3>
       <c-text-field
         label="email"
         type="email"
@@ -29,6 +30,17 @@
         class="registration__text-field"
       />
     </c-card>
+    <c-card class="login">
+      <p>
+        I already have an account,
+        <a
+          href="/login"
+          class="login__link"
+        >
+          log in
+        </a>
+      </p>
+    </c-card>
   </div>
 </template>
 
@@ -41,6 +53,7 @@ export default {
   components: {
     'c-card': CCard,
     'c-text-field': CTextField
+
   },
   data: () => ({
     email: '',
@@ -53,23 +66,39 @@ export default {
 
 <style lang="scss" scoped>
   .registration-wrapper {
-    display: flex;
-    justify-content: center;
+    padding-top: 61px;
   }
   .registration {
     width: 425px;
     padding: 24px;
+    margin: 0 auto 24px;
 
     &__title {
       padding: 0;
       margin: 0 0 32px 0;
       color: #282828;
       font-size: 22px;
+      font-weight: 400;
       line-height: 25px;
       text-align: center;
     }
     &__text-field {
       margin-bottom: 14px;
+    }
+  }
+  .login {
+    width: 425px;
+    padding: 24px;
+    margin: 0 auto;
+    text-align: center;
+
+    &__link {
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:visited {color: #349A89;}
+      &:hover {text-decoration: underline;}
     }
   }
 </style>
