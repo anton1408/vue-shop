@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import CBtn from '@/components/ui/buttons/CBtn'
-import CLink from '@/components/ui/buttons/CLink'
+import CBtn from '@/components/ui/CBtn'
+import CLink from '@/components/ui/CLink'
 
 export default {
   name: 'LayoutHeaderAuth',
