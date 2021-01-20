@@ -35,9 +35,9 @@ export default {
       type: String,
       default: () => 14 + 'px'
     },
-    fontColor: {
+    letterSpacing: {
       type: String,
-      default: () => '#fff'
+      default: () => '0px'
     },
     borderRadius: {
       type: String,
@@ -55,6 +55,7 @@ export default {
         'line-height': this.lineHeight,
         'background-color': this.backgroundColor,
         'font-size': this.fontSize,
+        'letter-spacing': this.letterSpacing,
         color: this.fontColor,
         'border-radius': this.borderRadius
       }

@@ -12,11 +12,12 @@
     </div>
     <div class="header__user-nav">
       <c-btn
-        title="TS"
-        fontColor="rgba(19, 15, 2, 0.72)"
-        backgroundColor="#F1C40F"
-        borderRadius="100%"
-        lineHeight="38px"
+        title="ts"
+        letter-spacing="1px"
+        font-color="rgba(19, 15, 2, 0.72)"
+        background-color="#F1C40F"
+        border-radius="100%"
+        line-height="40px"
         class="header__ts"
       />
       <router-link
