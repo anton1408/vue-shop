@@ -1,5 +1,5 @@
 <template>
-  <div class="login-wrapper">
+  <form class="login-wrapper">
     <c-card class="login">
       <h1 class="visually-hidden">Login page</h1>
       <h3 class="login__title">Login</h3>
@@ -39,7 +39,7 @@
         </a>
       </p>
     </c-card>
-  </div>
+  </form>
 </template>
 
 <script>
@@ -71,7 +71,6 @@ export default {
   margin: 0 auto 24px;
 
   &__title {
-    padding: 0;
     margin: 0 0 32px 0;
     color: #282828;
     font-size: 22px;
@@ -86,7 +85,6 @@ export default {
   }
   &__forgot-password {
     margin: 0 0 16px 0;
-    padding: 0;
     text-align: right;
 
     a {

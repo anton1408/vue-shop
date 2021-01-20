@@ -1,5 +1,5 @@
 <template>
-  <div class="registration-wrapper">
+  <form class="registration-wrapper">
     <c-card class="registration">
       <h1 class="visually-hidden">Registration page</h1>
       <h3 class="registration__title">Register</h3>
@@ -41,7 +41,7 @@
         </a>
       </p>
     </c-card>
-  </div>
+  </form>
 </template>
 
 <script>
@@ -74,7 +74,6 @@ export default {
     margin: 0 auto 24px;
 
     &__title {
-      padding: 0;
       margin: 0 0 32px 0;
       color: #282828;
       font-size: 22px;
@@ -98,7 +97,6 @@ export default {
       text-decoration: none;
 
       &:visited {color: #349A89;}
-      &:hover {text-decoration: underline;}
     }
   }
 </style>

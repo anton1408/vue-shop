@@ -5,12 +5,13 @@ import Router from 'vue-router'
 // Layouts
 import LayoutMain from '@/layout/LayoutMain'
 import LayoutAuthentication from '@/layout/LayoutAuthentication'
+import LayoutInbox from '@/layout/LayoutInbox'
 
 Vue.use(Router)
 
-const ifAuthenticated = (to, from, next) => {
-  console.log('ifAuthenticated')
-}
+// const ifAuthenticated = (to, from, next) => {
+//   console.log('ifAuthenticated')
+// }
 
 const router = new Router({
   base: '/',
@@ -18,13 +19,24 @@ const router = new Router({
   routes: [{
     path: '/',
     component: LayoutMain,
-    beforeEnter: ifAuthenticated,
+    // beforeEnter: ifAuthenticated,
     children: [{
       path: '',
       component: () => import('@/views/Home')
     }, {
       path: 'about',
       component: () => import('@/views/About')
+    }, {
+      path: 'favorite',
+      component: () => import('@/views/Favorite')
+    }]
+  }, {
+    path: '/inbox',
+    component: LayoutInbox,
+    // beforeEnter: ifAuthenticated,
+    children: [{
+      path: '',
+      component: () => import('@/views/Inbox')
     }]
   }, {
     path: '/login',

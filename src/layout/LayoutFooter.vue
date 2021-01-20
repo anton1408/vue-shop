@@ -1,7 +1,7 @@
 <template>
-  <div class="footer">
+  <footer class="footer">
     <p class="footer__copyright">Copyright © 2021. Privacy Policy.</p>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
   .footer {
     height: 73px;
-    background: rgba(192, 196, 206, 0.127321);
+    background: #ECEDEE;
 
     &__copyright {
       color: #C0C4CE;
