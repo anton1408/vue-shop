@@ -15,7 +15,7 @@
         :id="id"
         :cols="cols"
         :rows="rows"
-        class="text-field__textarea"
+        class="text-field__text-area"
         @input="emitValue"
       />
     </div>
@@ -90,7 +90,7 @@ export default {
     border-radius: 5px;
     padding: 22px;
 
-    &__textarea {
+    &__text-area {
       width: 100%;
       background-color: transparent;
       border: none;
@@ -100,13 +100,13 @@ export default {
       overflow: hidden;
       resize: none;
     }
-    &__textarea[placeholder],
-    &__textarea::-moz-placeholder,
-    &__textarea:-moz-placeholder,
-    &__textarea:-ms-input-placeholder {color: rgba(102, 102, 102, 0.466455);}
-    &__textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
-    &__textarea:focus::-moz-placeholder {opacity: 0; transition: opacity 0.5s ease;}
-    &__textarea:focus:-moz-placeholder {opacity: 0; transition: opacity 0.5s ease;}
-    &__textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+    &__text-area[placeholder],
+    &__text-area::-moz-placeholder,
+    &__text-area:-moz-placeholder,
+    &__text-area:-ms-input-placeholder {color: rgba(102, 102, 102, 0.466455);}
+    &__text-area:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+    &__text-area:focus::-moz-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+    &__text-area:focus:-moz-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+    &__text-area:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
   }
 </style>

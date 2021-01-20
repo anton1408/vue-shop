@@ -21,8 +21,13 @@
             label="description"
             id="description"
             placeholder="For example: Iron man suit"
+            class="inbox__text-area"
           />
-          <p>Photos</p>
+          <c-add-photo-field
+            label="photos"
+            id="photos"
+            class="inbox__add-photo"
+          />
           <c-text-field
             label="price"
             type="text"
@@ -46,6 +51,7 @@
 import CCard from '@/components/ui/CCard'
 import CTextField from '@/components/ui/CTextField'
 import CTextArea from '@/components/ui/CTextArea'
+import CAddPhotoField from '@/components/ui/CAddPhotoField'
 import CBtn from '@/components/ui/CBtn'
 
 export default {
@@ -54,6 +60,7 @@ export default {
     'c-card': CCard,
     'c-text-field': CTextField,
     'c-text-area': CTextArea,
+    'c-add-photo-field': CAddPhotoField,
     'c-btn': CBtn
 
   }
@@ -63,6 +70,7 @@ export default {
 <style lang="scss" scoped>
   .inbox-wrapper {
     padding-top: 34px;
+    padding-bottom: 95px;
   }
   .inbox {
     width: 1136px;
@@ -81,7 +89,11 @@ export default {
       line-height: 25px;
       text-align: center;
     }
-    &__text-field {margin-bottom: 24px;}
+    &__text-field,
+    &__text-area,
+    &__add-photo {
+      margin-bottom: 24px;
+    }
     &__submit-btn {
       width: 377px;
       margin: 0 auto;

@@ -52,10 +52,6 @@ export default {
     placeholder: {
       type: String,
       default: () => ''
-    },
-    lineHeight: {
-      type: String,
-      default: () => 58 + 'px'
     }
   },
   data: () => ({
