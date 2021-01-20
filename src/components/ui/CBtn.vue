@@ -38,6 +38,10 @@ export default {
     fontColor: {
       type: String,
       default: () => '#fff'
+    },
+    borderRadius: {
+      type: String,
+      default: () => '4px'
     }
   },
   computed: {
@@ -51,7 +55,8 @@ export default {
         'line-height': this.lineHeight,
         'background-color': this.backgroundColor,
         'font-size': this.fontSize,
-        color: this.fontColor
+        color: this.fontColor,
+        'border-radius': this.borderRadius
       }
     }
   },
@@ -66,7 +71,7 @@ export default {
 
 <style lang="scss" scoped>
   .c-btn {
-    border-radius: 4px;
+    //border-radius: 4px;
     cursor: pointer;
     width: 100%;
     user-select: none;

@@ -11,6 +11,14 @@
       </svg>
     </div>
     <div class="header__user-nav">
+      <c-btn
+        title="TS"
+        fontColor="rgba(19, 15, 2, 0.72)"
+        backgroundColor="#F1C40F"
+        borderRadius="100%"
+        lineHeight="38px"
+        class="header__ts"
+      />
       <router-link
         to="/favorite"
         class="header__favorite"
@@ -24,8 +32,13 @@
 </template>
 
 <script>
+import CBtn from '@/components/ui/CBtn'
+
 export default {
-  name: 'LayoutHeaderInbox'
+  name: 'LayoutHeaderInbox',
+  components: {
+    'c-btn': CBtn
+  }
 }
 </script>
 
@@ -44,6 +57,10 @@ export default {
     align-items: center;
     display: flex;
     margin-right: 160px;
+  }
+  &__ts {
+    width: 40px;
+    margin-right: 38px;
   }
   &__favorite {
     cursor: pointer;
