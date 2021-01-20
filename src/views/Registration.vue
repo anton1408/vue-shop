@@ -1,34 +1,36 @@
 <template>
-  <form class="registration-wrapper">
+  <div class="registration-wrapper">
     <c-card class="registration">
-      <h1 class="visually-hidden">Registration page</h1>
-      <h3 class="registration__title">Register</h3>
-      <c-text-field
-        label="email"
-        type="email"
-        name="email"
-        placeholder="Example@gmail.com"
-        class="registration__text-field"
-      />
-      <c-text-field
-        label="full name"
-        type="text"
-        name="full-name"
-        placeholder="Peter Parker"
-        class="registration__text-field"
-      />
-      <c-text-field
-        label="Password"
-        type="password"
-        name="password"
-        class="registration__text-field"
-      />
-      <c-text-field
-        label="Password again"
-        type="password"
-        name="confirm-password"
-        class="registration__text-field"
-      />
+      <form>
+        <h1 class="visually-hidden">Registration page</h1>
+        <h3 class="registration__title">Register</h3>
+        <c-text-field
+          label="email"
+          type="email"
+          id="email"
+          placeholder="Example@gmail.com"
+          class="registration__text-field"
+        />
+        <c-text-field
+          label="full name"
+          type="text"
+          id="full-name"
+          placeholder="Peter Parker"
+          class="registration__text-field"
+        />
+        <c-text-field
+          label="Password"
+          type="password"
+          id="password"
+          class="registration__text-field"
+        />
+        <c-text-field
+          label="Password again"
+          type="password"
+          id="confirm-password"
+          class="registration__text-field"
+        />
+      </form>
     </c-card>
     <c-card class="login">
       <p>
@@ -41,7 +43,7 @@
         </a>
       </p>
     </c-card>
-  </form>
+  </div>
 </template>
 
 <script>

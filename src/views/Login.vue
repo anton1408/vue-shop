@@ -1,32 +1,34 @@
 <template>
-  <form class="login-wrapper">
+  <div class="login-wrapper">
     <c-card class="login">
-      <h1 class="visually-hidden">Login page</h1>
-      <h3 class="login__title">Login</h3>
-      <c-text-field
-        label="email"
-        type="email"
-        name="email"
-        placeholder="Example@gmail.com"
-        class="login__text-field"
-      />
-      <c-text-field
-        label="Password"
-        type="password"
-        name="password"
-        class="login__text-field login__text-field--last-child"
-      />
-      <p class="login__forgot-password">
-        <a href="javascript:void(0);">
-          Don’t remember password?
-        </a>
-      </p>
-      <c-btn
-        title="continue"
-        line-height="58px"
-        font-size="16px"
-        class="login__submit-btn"
-      />
+      <form>
+        <h1 class="visually-hidden">Login page</h1>
+        <h3 class="login__title">Login</h3>
+        <c-text-field
+          label="email"
+          type="email"
+          id="email"
+          placeholder="Example@gmail.com"
+          class="login__text-field"
+        />
+        <c-text-field
+          label="Password"
+          type="password"
+          id="password"
+          class="login__text-field login__text-field--last-child"
+        />
+        <p class="login__forgot-password">
+          <a href="javascript:void(0);">
+            Don’t remember password?
+          </a>
+        </p>
+        <c-btn
+          title="continue"
+          line-height="58px"
+          font-size="16px"
+          class="login__submit-btn"
+        />
+      </form>
     </c-card>
     <c-card class="registration">
       <p>
@@ -39,7 +41,7 @@
         </a>
       </p>
     </c-card>
-  </form>
+  </div>
 </template>
 
 <script>

@@ -2,7 +2,7 @@
   <div>
     <label
       v-if="label"
-      :for="name"
+      :for="id"
       class="label"
     >
       {{label}}
@@ -12,7 +12,7 @@
         v-model="fieldValue"
         :type="fieldType"
         :placeholder="placeholder"
-        :id="name"
+        :id="id"
         class="text-field__input"
         @input="emitValue"
       >
@@ -45,7 +45,7 @@ export default {
       type: String,
       default: () => 'text'
     },
-    name: {
+    id: {
       type: String,
       default: () => ''
     },

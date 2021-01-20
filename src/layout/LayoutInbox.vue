@@ -15,9 +15,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-  .layout-header {
-    margin-bottom: 34px;
-  }
-</style>
