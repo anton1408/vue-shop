@@ -39,6 +39,10 @@ export default {
       type: String,
       default: () => '0px'
     },
+    fontColor: {
+      type: String,
+      default: () => '#fff'
+    },
     borderRadius: {
       type: String,
       default: () => '4px'
