@@ -24,9 +24,6 @@ const router = new Router({
       path: '',
       component: () => import('@/views/Home')
     }, {
-      path: 'about',
-      component: () => import('@/views/About')
-    }, {
       path: 'favorite',
       component: () => import('@/views/Favorite')
     }]

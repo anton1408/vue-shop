@@ -44,27 +44,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 77px;
-  background: linear-gradient(180deg, #090810 0%, #171236 100%);
-
-  &__logo {
-    margin: 0 0 0 97px;
-  }
-  &__user-nav {
-    align-items: center;
+  .header {
     display: flex;
-    margin-right: 160px;
+    justify-content: space-between;
+    align-items: center;
+    height: 77px;
+    background: linear-gradient(180deg, #090810 0%, #171236 100%);
+
+    &__logo {
+      margin: 0 0 0 97px;
+    }
+    &__user-nav {
+      align-items: center;
+      display: flex;
+      margin-right: 160px;
+    }
+    &__ts {
+      width: 40px;
+      margin-right: 38px;
+    }
+    &__favorite {
+      cursor: pointer;
+    }
   }
-  &__ts {
-    width: 40px;
-    margin-right: 38px;
-  }
-  &__favorite {
-    cursor: pointer;
-  }
-}
 </style>

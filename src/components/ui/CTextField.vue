@@ -93,6 +93,7 @@ export default {
 
   .text-field {
     display: flex;
+    align-items: center;
     width: 100%;
     height: 58px;
     background-color: #F9FAFB;
@@ -102,7 +103,7 @@ export default {
 
     &__input {
       width: 100%;
-      padding: 20px 12px;
+      padding: 0 12px;
       background-color: transparent;
       border: none;
       outline: none;

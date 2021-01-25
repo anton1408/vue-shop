@@ -24,6 +24,10 @@ export default {
       type: String,
       default: () => 12 + 'px'
     },
+    fontColor: {
+      type: String,
+      default: () => '#000'
+    },
     src: {
       type: String,
       default: () => ''
@@ -43,14 +47,13 @@ export default {
 
 <style lang="scss" scoped>
   .c-link {
-    color: #000;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
 
     &:visited {
-      color: #000;
+      color: inherit;
     }
     &:hover {
       color: #349A89 !important;
