@@ -1,4 +1,9 @@
 # vue-shop2
+## pages
+### '/login' - login page
+### '/registration' - registration page
+### '/' - main page
+### '/inbox' - inbox page
 
 ## Project setup
 ```

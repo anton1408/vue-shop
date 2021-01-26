@@ -23,8 +23,9 @@
       box-shadow="0px 1px 4px rgba(0, 0, 0, 0.217111)"
       class="filter"
     >
-      <c-select />
-      <p>Lorem ipsum <br>dolor sit amet, <br>consectetur adipisicing.</p>
+      <c-select
+        :options="options"
+      />
     </c-card>
     <div class="goods">goods</div>
   </main>
@@ -43,7 +44,16 @@ export default {
     'c-btn': CBtn,
     'c-card': CCard,
     'c-select': CSelect
-  }
+  },
+  data: () => ({
+    options: [
+      { name: 'Option 1', value: 1 },
+      { name: 'Option 1', value: 2 },
+      { name: 'Option 1', value: 3 },
+      { name: 'Option 1', value: 4 },
+      { name: 'Option 1', value: 5 }
+    ]
+  })
 }
 </script>
 
