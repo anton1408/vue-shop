@@ -3,6 +3,7 @@
 #### '/login' - login page
 #### '/registration' - registration page
 #### '/' - main page
+#### '/favorite' - favorite goods page
 #### '/inbox' - inbox page
 
 ## Project setup
